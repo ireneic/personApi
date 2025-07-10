@@ -36,11 +36,10 @@ public class PersonRepository : IPersonRepository
             {
                 Id = reader.GetInt32("Id"),
                 Email = reader.GetString("Email"),
-                Profile = new Profile
+                Profile = new Company
                 {
                     Name = reader.GetString("Name"),
-                    Age = reader.GetInt32("Age"),
-                    Company = reader.GetString("Company")
+                    
                 }
             };
 

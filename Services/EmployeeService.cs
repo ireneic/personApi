@@ -10,5 +10,9 @@ public class EmployeeService: IEmployeeService
         _personRepository = personRepository;
     }
 
-    
+
+    public Person GetPersonById()
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -1,3 +1,4 @@
+using Person_Api.Data;
 using Person_Api.Repositories;
 using Person_Api.Repository;
 
@@ -7,6 +8,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddDbContext<Context>();
 
 var app = builder.Build();
 
